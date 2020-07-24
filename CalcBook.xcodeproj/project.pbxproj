@@ -14,6 +14,10 @@
 		95D757D324CB22ED000C084A /* CalcBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95D757D124CB22EC000C084A /* CalcBook.xcdatamodeld */; };
 		95D757D524CB22F1000C084A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D757D424CB22F1000C084A /* Assets.xcassets */; };
 		95D757D824CB22F1000C084A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D757D624CB22F1000C084A /* LaunchScreen.storyboard */; };
+		95D757E324CB32E8000C084A /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D757E224CB32E8000C084A /* CalcViewController.swift */; };
+		95D757E524CB32F6000C084A /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D757E424CB32F6000C084A /* StoryViewController.swift */; };
+		95D757E724CB358A000C084A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D757E624CB358A000C084A /* TabBarViewController.swift */; };
+		95D757EA24CB41A0000C084A /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D757E924CB41A0000C084A /* KeyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		95D757D424CB22F1000C084A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95D757D724CB22F1000C084A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95D757D924CB22F1000C084A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95D757E224CB32E8000C084A /* CalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
+		95D757E424CB32F6000C084A /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		95D757E624CB358A000C084A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		95D757E924CB41A0000C084A /* KeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,52 @@
 		95D757C724CB22EC000C084A /* CalcBook */ = {
 			isa = PBXGroup;
 			children = (
-				95D757C824CB22EC000C084A /* AppDelegate.swift */,
-				95D757CA24CB22EC000C084A /* SceneDelegate.swift */,
-				95D757CC24CB22EC000C084A /* ViewController.swift */,
-				95D757CE24CB22EC000C084A /* Main.storyboard */,
+				95D757DF24CB3258000C084A /* Model */,
+				95D757E124CB3266000C084A /* View */,
+				95D757E024CB325E000C084A /* Controller */,
 				95D757D424CB22F1000C084A /* Assets.xcassets */,
-				95D757D624CB22F1000C084A /* LaunchScreen.storyboard */,
 				95D757D924CB22F1000C084A /* Info.plist */,
 				95D757D124CB22EC000C084A /* CalcBook.xcdatamodeld */,
 			);
 			path = CalcBook;
+			sourceTree = "<group>";
+		};
+		95D757DF24CB3258000C084A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95D757E024CB325E000C084A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95D757CC24CB22EC000C084A /* ViewController.swift */,
+				95D757E224CB32E8000C084A /* CalcViewController.swift */,
+				95D757E424CB32F6000C084A /* StoryViewController.swift */,
+				95D757E624CB358A000C084A /* TabBarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		95D757E124CB3266000C084A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95D757E824CB4178000C084A /* Button */,
+				95D757C824CB22EC000C084A /* AppDelegate.swift */,
+				95D757CA24CB22EC000C084A /* SceneDelegate.swift */,
+				95D757CE24CB22EC000C084A /* Main.storyboard */,
+				95D757D624CB22F1000C084A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95D757E824CB4178000C084A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				95D757E924CB41A0000C084A /* KeyButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D757E524CB32F6000C084A /* StoryViewController.swift in Sources */,
 				95D757CD24CB22EC000C084A /* ViewController.swift in Sources */,
 				95D757C924CB22EC000C084A /* AppDelegate.swift in Sources */,
+				95D757E324CB32E8000C084A /* CalcViewController.swift in Sources */,
+				95D757E724CB358A000C084A /* TabBarViewController.swift in Sources */,
 				95D757CB24CB22EC000C084A /* SceneDelegate.swift in Sources */,
 				95D757D324CB22ED000C084A /* CalcBook.xcdatamodeld in Sources */,
+				95D757EA24CB41A0000C084A /* KeyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FDA988DZF;
 				INFOPLIST_FILE = CalcBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FDA988DZF;
 				INFOPLIST_FILE = CalcBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
